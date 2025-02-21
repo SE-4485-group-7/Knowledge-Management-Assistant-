@@ -1,18 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Knowledge-Management-Assistant
+Built with Next.js
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+Make sure you have the following installed on your machine:
+- **Node.js**
+- **npm**
+- A **PostgreSQL** or **MySQL** database (or other supported database)
+- **Docker or K8 installed**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Configuration
+1. `npm i` or `npm install`: Initializes your project by downloading all the required packages listed in your package.json file. It creates a node_modules directory where all the dependencies will be stored.
+2. Run `docker compose up` to start the container or start it manually inside the docker desktop.
+3. Run `npm run build` Build the project.
+4. You can either `npm run start` or `npm run dev` to start the development server.
+
+## Commands (to use during development)
+- `npm run dev`: Start the development server.
+- `npx prisma studio`: Start the database server and interact with your data in Prisma projects.
+- `npm run build`: Build the project.(doing this can skip the step 4, 5, 6 above)
+- `npm run start`: Start the production server.
+- `npm run lint`: Lint the project.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
