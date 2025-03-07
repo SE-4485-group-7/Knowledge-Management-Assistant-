@@ -11,10 +11,10 @@ Make sure you have the following installed on your machine:
 - **Docker or K8 installed**
 
 ### Configuration
-1. `npm i` or `npm install`: Initializes your project by downloading all the required packages listed in your package.json file. It creates a node_modules directory where all the dependencies will be stored.
-2. Run `docker compose up` to start the container or start it manually inside the docker desktop.
-3. Run `npm run build` Build the project.
-4. You can either `npm run start` or `npm run dev` to start the development server.
+1. `pnpm i` or `pnpm install`: Initializes your project by downloading all the required packages listed in your package.json file. It creates a node_modules directory where all the dependencies will be stored.
+<!-- 2. Run `docker compose up` to start the container or start it manually inside the docker desktop. -->
+<!-- 3. Run `npm run build` Build the project. -->
+4. You can either `pnpm run start` or `pnpm run dev` to start the development server.
 
 ## Commands (to use during development)
 - `npm run dev`: Start the development server.
