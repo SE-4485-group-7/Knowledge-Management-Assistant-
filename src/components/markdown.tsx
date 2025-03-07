@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 export const NonMemoizedMarkdown = ({ children }: { children: string }) => {
   const components = {
-    code: ({ node, inline, className, children, ...props }: any) => {
+    code: ({inline, className, children, ...props }: any) => {
       const match = /language-(\w+)/.exec(className || "");
       return !inline && match ? (
         <pre
@@ -22,21 +23,21 @@ export const NonMemoizedMarkdown = ({ children }: { children: string }) => {
         </code>
       );
     },
-    ol: ({ node, children, ...props }: any) => {
+    ol: ({children, ...props }: any) => {
       return (
         <ol className="list-decimal list-inside ml-4" {...props}>
           {children}
         </ol>
       );
     },
-    li: ({ node, children, ...props }: any) => {
+    li: ({children, ...props }: any) => {
       return (
         <li className="py-1" {...props}>
           {children}
         </li>
       );
     },
-    ul: ({ node, children, ...props }: any) => {
+    ul: ({children, ...props }: any) => {
       return (
         <ul className="list-decimal list-inside ml-4" {...props}>
           {children}

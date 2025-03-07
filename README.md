@@ -12,6 +12,8 @@ Make sure you have the following installed on your machine:
 
 ### Configuration
 1. `pnpm i` or `pnpm install`: Initializes your project by downloading all the required packages listed in your package.json file. It creates a node_modules directory where all the dependencies will be stored.
+2. Go to `https://console.cloud.google.com/`  to generate your API key
+3. Create a file name as `.env.local` copy this and paste your key between the quotaion mark
 <!-- 2. Run `docker compose up` to start the container or start it manually inside the docker desktop. -->
 <!-- 3. Run `npm run build` Build the project. -->
 4. You can either `pnpm run start` or `pnpm run dev` to start the development server.
